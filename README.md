@@ -14,11 +14,9 @@ Implementar un dispositivo basado en ESP32 para controlar la cerradura de la pue
 Configurar el protocolo MQTT para la comunicación entre el dispositivo y la aplicación móvil.
 Utilizar la plataforma ThingSpeak para el almacenamiento y monitoreo de datos.
 Garantizar la seguridad del sistema mediante la implementación de mecanismos de cifrado y autenticación.
-## 4. Sensores y Actuadores
+## 4. Sensores 
 #### Sensores
 Sensor de estado de puerta (reed switch o sensor magnético): Para detectar si la puerta está abierta o cerrada.
-#### Actuadores
-Solenoide de 12V: Para accionar la cerradura.
 
 ## 5. IoT y Comunicación
 ### Plataforma IoT:
@@ -33,7 +31,6 @@ La base de datos de ThingSpeak se utilizará para almacenar y visualizar datos r
 ### Hardware:
 
 ##### ESP32: El microcontrolador principal del sistema.
-##### Solenoide de 12V: Para accionar la cerradura.
 ##### Relé de 5V: Para controlar el solenoide desde el ESP32.
 ##### Sensor de estado de puerta: Para detectar el estado de la puerta.
 ##### Cables y conectores: Para realizar las conexiones necesarias.
