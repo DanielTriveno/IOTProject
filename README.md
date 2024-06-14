@@ -31,7 +31,7 @@ La base de datos de ThingSpeak se utilizará para almacenar y visualizar datos r
 ### Hardware:
 
 ##### ESP32: El microcontrolador principal del sistema.
-##### Relé de 5V: Para controlar el solenoide desde el ESP32.
+##### Relé de 5V.
 ##### Sensor de estado de puerta: Para detectar el estado de la puerta.
 ##### Cables y conectores: Para realizar las conexiones necesarias.
 ##### Batería: Para alimentar el sistema.
