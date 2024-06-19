@@ -3,6 +3,7 @@
 #include <Adafruit_SSD1306.h>
 #include <Adafruit_GFX.h>
 #include <ThingSpeak.h>
+#include <PubSubClient.h>
 
 const char* SSID = "Wokwi-GUEST";
 const char* PWD = "";
@@ -10,7 +11,8 @@ unsigned long int ChannelNumber = 2579993;
 const char* writeAPIKey = "YSRRAER2SWJ593WE";
 const char* readAPIKey = "J7VOV2VA42EHXIZ4";
 
-WiFiClient client;
+WiFiClient espClient;
+PubSubClient client(espClient); // MQTT client
 
 #define echoPin 18
 #define trigPin 19
@@ -59,6 +61,9 @@ void setup() {
   display.display();
 
   doorServo.write(0);
+
+  // MQTT setup
+  client.setServer("mqtt.thingspeak.com", 1883);
 }
 
 void writeOled(char* str) {
